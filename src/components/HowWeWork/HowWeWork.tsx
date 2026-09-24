@@ -10,25 +10,25 @@ const HowWeWork = () => {
     const section = [
         {
             number: '01',
-            img: test,
+            img: "/image/section2.avif",
             description: 'Explore our services and find the solution that fits your needs.',
             title: 'Choose Your Service'
         },
         {
             number: '02',
-            img: test,
+            img: "/image/section6.jpg",
             description: 'Contact us through the provided details and tell us what you\'re looking for.',
             title: 'Get in Touch'
         },
         {
             number: '03',
-            img: test,
+            img: "/image/section1.avif",
             description: 'We\'ll understand your requirements, discuss the details, and agree on a suitable timeline.',
             title: 'Discuss & Set the Timeline'
         },
         {
             number: '04',
-            img: test,
+            img: "/image/section4.webp",
             description: 'Once everything is clear, we get to work and deliver your project as promised.',
             title: 'We Get It Done'
         }
@@ -39,7 +39,7 @@ const HowWeWork = () => {
             {/* <h1 className=" text-5xl">How We Work!</h1> */}
             <div className="mb-12 flex items-start flex-col pl-20 max-xl:pl-12 max-md:pl-8">
                 <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#337DDC]">
-                    What we offer
+                    HOW WE WORK
                 </p>
 
                 <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
@@ -72,6 +72,8 @@ const HowWeWork = () => {
                                 <div className=" h-[50%] max-lg:h-full  max-lg:w-[50%] max-[500px]:w-full!">
                                     <Image
                                         src={it.img}
+                                        width={1920}
+                                        height={1080}
                                         className="h-full object-cover"
                                         alt="howWeWorkImgSection"
                                     />
