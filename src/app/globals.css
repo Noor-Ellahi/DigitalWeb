@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -17,10 +17,25 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+@theme {
+  --animate-roll-in: roll-in 0.500s cubic-bezier(0.25, 1, 0.5, 1);
+  --animate-roll-out: roll-out 1.500s cubic-bezier(0.25, 1, 0.5, 1);
+
+  @keyframes roll-in {
+    0% { transform: translateY(0); }
+    70% { transform: translateY(-110%); }
+    100% { transform: translateY(-100%); }
+  }
+  @keyframes roll-out {
+    0% { transform: translateY(0); }
+    70% { transform: translateY(110%); }
+    100% { transform: translateY(100%); }
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
