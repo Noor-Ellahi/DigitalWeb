@@ -32,10 +32,10 @@ const Navbar = () => {
     // const currentInfo = activeTab && tabData[activeTab] ? tabData[activeTab].info : null;
 
     return (
-        <div className="flex absolute flex-col items-center bg-transparent py-4 w-full">
+        <div className="flex absolute flex-col z-1 items-center bg-transparent py-4 w-full">
 
             {/* The Navbar Pill — its background changes based on the state variable 'currentStyle' */}
-            <div className={`w-[60%] max-xl:w-[70%] flex ${activeTab || dropDowner ? 'rounded-[0px] rounded-tr-[5px] rounded-tl-[5px]' : 'rounded-[15px]'} justify-between items-center  pl-6 pr-2 py-3  bg-[#242425] transition-all duration-500`}>
+            <div className={`w-[60%] max-xl:w-[70%] max-lg:w-[90%] flex ${activeTab || dropDowner ? 'rounded-[0px] rounded-tr-[5px] rounded-tl-[5px]' : 'rounded-[15px]'} justify-between items-center  pl-6 pr-2 py-3  bg-[#242425] transition-all duration-500`}>
                 <div className="font-extrabold text-[#F8F4F1] text-2xl select-none">vizcom</div>
 
                 <ul className="flex text-sm font-semibold text-[#F8F4F1] gap-6 max-xl:gap-4 max-lg:hidden items-center">
@@ -63,7 +63,7 @@ const Navbar = () => {
             </div>
 
             {/* 2. Prints info completely outside the menu, directly below the Navbar list */}
-            <div className={`w-[60%] max-xl:w-[70%] z-10  overflow-hidden transition-all rounded-bl-[5px] rounded-br-[5px] duration-300 ${dropDowner ? "max-h-73  opacity-100 " : "max-h-0 opacity-0"} ${activeTab ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
+            <div className={`w-[60%] max-xl:w-[70%] max-lg:w-[90%] z-10  overflow-hidden transition-all rounded-bl-[5px] rounded-br-[5px] duration-300 ${dropDowner ? "max-h-73  opacity-100 " : "max-h-0 opacity-0"} ${activeTab ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className={`bg-[#242425] ${activeTab === "Home" ? "pr-25" : ""} ${activeTab === "Team" ? 'pr-5' : ""} pt-5 flex justify-end border border-[#333]   h-73  text-xs text-[#EDEAE7] font-medium text-center shadow-xl`}>
                     {/* {currentInfo} */}
 

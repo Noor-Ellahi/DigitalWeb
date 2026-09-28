@@ -37,7 +37,7 @@ const HowWeWork = () => {
     return (
         <div>
             {/* <h1 className=" text-5xl">How We Work!</h1> */}
-            <div className="mb-12 flex items-start flex-col pl-20 max-xl:pl-12 max-md:pl-8">
+            <div className="mb-12 flex items-start flex-col pl-20 max-xl:pl-12 max-md:pl-8 max-sm:pl-4">
                 <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#337DDC]">
                     HOW WE WORK
                 </p>

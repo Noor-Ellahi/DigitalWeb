@@ -184,7 +184,7 @@ const Pricing = () => {
 
     return (
         <div className="py-10">
-            <div className="mb-14 flex items-start flex-col pl-20 max-xl:pl-12 max-md:pl-8">
+            <div className="mb-14 flex items-start flex-col pl-20 max-xl:pl-12 max-md:pl-8 max-sm:pl-4">
                 <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#337DDC]">
                     Pricing
                 </p>
@@ -217,7 +217,7 @@ const Pricing = () => {
                                     <li
                                         key={ind}
                                         onClick={() => setPriceSection(ind)}
-                                        className={`group relative cursor-pointer px-4 py-3 text-sm sm:text-base font-semibold tracking-tight transition-all duration-300 select-none ${isActive
+                                        className={`group relative  cursor-pointer px-4 py-3 text-sm sm:text-base font-semibold tracking-tight transition-all duration-300 select-none ${isActive
                                                 ? "text-gray-900"
                                                 : "text-gray-400 hover:text-gray-600"
                                             }`}

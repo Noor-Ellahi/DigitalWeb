@@ -19,9 +19,9 @@ const Hero = () => {
 
 
 
-        <div className="  overflow-hidden h-screen bg-black/55 flex justify-center items-center">
+        <div className="  overflow-hidden relative h-screen max-md:h-[110vh] max-[450px]:h-[120vh]! max-[400px]:h-[130vh]!  bg-black/55 flex justify-center items-center">
             <Image
-                className=" w-full h-full absolute z-[-1] "
+                className=" w-full h-full  z-[-1] absolute"
                 alt="bgImg"
                 width={1920}
                 height={1080}
