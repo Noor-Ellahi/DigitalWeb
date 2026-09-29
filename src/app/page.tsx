@@ -1,3 +1,8 @@
+
+
+// Compomemts
+import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import HowWeWork from "@/components/HowWeWork/HowWeWork";
 import Navbar from "@/components/Navbar/Navbar";
@@ -12,8 +17,6 @@ export default function Home() {
     <div >
 
 
-
-
       <Navbar />
       <Hero/>
       <Services/>
@@ -21,6 +24,8 @@ export default function Home() {
       <Pricing/>
       <Porfolio/>
       <Testimonials/>
+      <Contact/>
+      <Footer/>
     </div>
 
   );
