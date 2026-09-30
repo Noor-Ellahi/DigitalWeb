@@ -193,20 +193,7 @@ const Pricing = () => {
                     Everything you need to Know.
                 </h2>
             </div>
-            {/* <div>
-                <ul className="flex items-center justify-center gap-2 text-xl">
-                    {
-                        ['SEO Manangement', "Content-Writing", "Web-Development", "Logo-Design"].map((it, ind) => {
-                            return (
-                                <li key={ind} onClick={() => setPriceSection(ind)} className={`${priceSection === ind ? "text-[#000]!" : ""} font-semibold transition duration-400 text-[#000]/50 flex flex-col gap-2 ${ind === 3 ? "border-r-0" : "border-r-1"}  cursor-pointer  pr-3 `}>
-                                    {it}
-                                    <span className={`${priceSection === ind ? "h-[2px] w-full opacity-100" : " opacity-0 "} block   bg-[#337DDC] `}></span>
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-            </div> */}
+            
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
                 <div className="flex justify-center border-b border-gray-100 pb-px overflow-x-auto scrollbar-none max-w-full">
                     <ul className="flex items-center gap-1 sm:gap-2 whitespace-nowrap px-2">

@@ -21,7 +21,7 @@ const services = [
 const Contact = () => {
     return (
         <section className="mt-24 px-4 pb-20 sm:px-8 lg:px-12">
-            <div className=" xl:mx-10 max-w-7xl">
+            <div className=" xl:mx-10 ">
 
                 {/* Heading */}
                 <div className="mb-12">

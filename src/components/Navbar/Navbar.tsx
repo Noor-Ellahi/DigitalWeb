@@ -176,6 +176,7 @@ import test1 from "../../../public/image/img2.avif";
 
 // Icons
 import { FaHamburger, FaAngleDown } from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = () => {
     const [activeTab, setActiveTab] = useState<string | null>(null);
@@ -231,8 +232,8 @@ const Navbar = () => {
 
             <div
                 className={`w-[60%] max-xl:w-[70%] max-lg:w-[90%] flex ${showNavbar && !activeTab && !dropDowner
-                        ? "rounded-[15px]"
-                        : "rounded-[0px] rounded-tr-[5px] rounded-tl-[5px]"
+                    ? "rounded-[15px]"
+                    : "rounded-[0px] rounded-tr-[5px] rounded-tl-[5px]"
                     } justify-between items-center pl-6 pr-2 py-3 bg-[#242425] transition-[border-radius] duration-1000 transition-all duration-500`}
             >
                 {/* Logo */}
@@ -242,14 +243,18 @@ const Navbar = () => {
 
                 {/* Desktop Navigation */}
                 <ul className="flex text-sm font-semibold text-[#F8F4F1] gap-6 max-xl:gap-4 max-lg:hidden items-center">
-                    <RotateText
-                        text="Home"
-                        subItems={["First", "Second"]}
-                        onHoverStart={() => setActiveTab("Home")}
-                        onHoverEnd={() => setActiveTab(null)}
-                    />
+                    <Link href={'/'}>
+                        <RotateText
+                            text="Home"
+                            // subItems={["First", "Second"]}
+                            // onHoverStart={() => setActiveTab("Home")}
+                            // onHoverEnd={() => setActiveTab(null)}
+                        />
+                    </Link>
 
-                    <RotateText text="Projects" />
+                    <Link href={'/portfolio'}>
+                        <RotateText text="Projects" />
+                    </Link>
 
                     <RotateText
                         text="Team"
@@ -290,8 +295,8 @@ const Navbar = () => {
             {/* Dropdown / Mega Menu */}
             <div
                 className={`w-[60%] max-xl:w-[70%] max-lg:w-[90%] z-10 overflow-hidden transition-all rounded-bl-[5px] rounded-br-[5px] duration-300 ${dropDowner
-                        ? "max-h-73 opacity-100"
-                        : "max-h-0 opacity-0"
+                    ? "max-h-73 opacity-100"
+                    : "max-h-0 opacity-0"
                     } ${activeTab
                         ? "max-h-60 opacity-100"
                         : "max-h-0 opacity-0"
@@ -323,14 +328,18 @@ const Navbar = () => {
                     {dropDowner ? (
                         <div className="w-full flex items-start z-19">
                             <ul className="flex w-full flex-col gap-3 px-4 text-[15px] items-start">
-                                <li className="py-1.5 cursor-pointer flex w-full items-center justify-between">
-                                    Home
-                                    <FaAngleDown />
-                                </li>
+                                <Link href={'/'}>
+                                    <li className="py-1.5 cursor-pointer flex w-full items-center justify-between">
+                                        Home
+                                        <FaAngleDown />
+                                    </li>
+                                </Link>
 
-                                <li className="py-1.5 cursor-pointer flex w-full items-center justify-between">
-                                    Projects
-                                </li>
+                                <Link href={'/portfolio'}>
+                                    <li className="py-1.5 cursor-pointer flex w-full items-center justify-between">
+                                        Projects
+                                    </li>
+                                </Link>
 
                                 <li className="py-1.5 cursor-pointer flex w-full items-center justify-between">
                                     Team
