@@ -21,12 +21,35 @@ const Porfolio = () => {
     const pathName = usePathname()
 
     // States
+    const [projectImgOpener, setProjectImgOpener] = useState('')
     const [portSection, setPortSection] = useState(0)
 
 
     const section = [
         {
             id: 0,
+            catogoryName: "Content Writing",
+            tiers: [
+                {
+                    title: '',
+                    work: "",
+                    imgUrl: ''
+                }
+            ]
+        },
+        {
+            id: 1,
+            catogoryName: "Content Writing",
+            tiers: [
+                {
+                    title: '',
+                    work: "",
+                    imgUrl: ''
+                }
+            ]
+        },
+        {
+            id: 2,
             catgoryName: "WebApp",
             tiers: [
                 {
@@ -62,7 +85,7 @@ const Porfolio = () => {
             ]
         },
         {
-            id: 1,
+            id: 3,
             category: "Logos",
             tiers: [
                 {
@@ -189,9 +212,13 @@ const Porfolio = () => {
                         <div className="py-15 px-10 max-sm:px-5 max-md:px-20">
                             <div className="grid grid-cols-3 max-md:grid-cols-1 max-xl:grid-cols-2 gap-5">
                                 {
-                                    section[portSection]?.tiers.map((it, ind) => {
+                                    section[portSection].tiers[0].imgUrl != "" && section[portSection]?.tiers.map((it, ind) => {
+
+
                                         return (
-                                            <div key={ind} className="relative group bg-gray-900 h-70 overflow-hidden">
+                                            <div key={ind} onClick={() => {
+                                                setProjectImgOpener(it.imgUrl)
+                                            }} className="relative group bg-gray-900 h-70 overflow-hidden">
                                                 <Image
                                                     className="w-full object-cover  group-hover:opacity-20 transition-all h-full duration-300 group-hover:scale-115"
                                                     src={it.imgUrl}
@@ -205,13 +232,47 @@ const Porfolio = () => {
                                                     <p className="text-[15px] transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 delay-150">{it.work}</p>
                                                 </div>
 
-
                                             </div>
+
 
 
                                         )
                                     })
                                 }
+                                <div
+                                    className={`fixed inset-0 bg-black/80 z-50 flex items-center justify-center transition-all duration-400 ${projectImgOpener ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                                        }`}
+                                    onClick={() => setProjectImgOpener('')}
+                                >
+                                    <div className="relative max-w-4xl h-140"  onClick={(e)=> e.stopPropagation()}>
+                                        {projectImgOpener && (
+                                            <Image
+                                            
+                                                src={projectImgOpener}
+                                                alt="Enlarged view"
+                                                width={1920}
+                                                height={1080}
+                                                className="object-contain h-full"
+                                            />
+                                        )}
+                                    </div>
+                                </div>
+                                {/* {
+                                    projectImgOpener ?
+                                        (
+                                            <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center" onClick={() => setProjectImgOpener('')}>
+                                                <div className={`relative max-w-4xl h-140 transition-opacity duration-300 ${projectImgOpener ? "opacity-100" : 'opacity-0'} `}>
+                                                    <Image
+                                                        src={projectImgOpener}
+                                                        alt="Enlarged view"
+                                                        width={1920}
+                                                        height={1080}
+                                                        className="object-contain h-full"
+                                                    />
+                                                </div>
+                                            </div>
+                                        ) : null
+                                } */}
 
                             </div>
 
@@ -223,8 +284,9 @@ const Porfolio = () => {
 
                     </div>
 
+
             }
-            
+
         </div>
     )
 }
