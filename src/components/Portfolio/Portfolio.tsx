@@ -8,6 +8,7 @@ import bg from "../../../public/image/portimg1.jpg"
 // Imports
 import { usePathname } from "next/navigation"
 import { useState } from "react"
+import Footer from "../Footer/Footer"
 
 
 
@@ -101,7 +102,7 @@ const Porfolio = () => {
 
 
     return (
-        <div className="my-20">
+        <div className="my-20" >
             <div className="mb-12 px-20 max-lg:px-10 max-md:px-5">
                 <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#337DDC]">
                     Portfolio
@@ -185,8 +186,8 @@ const Porfolio = () => {
                             </div>
                         </div>
 
-                        <div className="py-15 px-10">
-                            <div className="grid grid-cols-3 gap-5">
+                        <div className="py-15 px-10 max-sm:px-5 max-md:px-20">
+                            <div className="grid grid-cols-3 max-md:grid-cols-1 max-xl:grid-cols-2 gap-5">
                                 {
                                     section[portSection]?.tiers.map((it, ind) => {
                                         return (
@@ -223,6 +224,7 @@ const Porfolio = () => {
                     </div>
 
             }
+            
         </div>
     )
 }

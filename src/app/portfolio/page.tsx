@@ -4,6 +4,7 @@
 import Navbar from "@/components/Navbar/Navbar"
 import Porfolio from "@/components/Portfolio/Portfolio"
 import Hero from "@/components/Hero/Hero"
+import Footer from "@/components/Footer/Footer"
 
 
 
@@ -17,7 +18,8 @@ const portfolio = () => {
         <div>
             <Navbar />
             <Hero/>
-            <Porfolio/>
+            <Porfolio />
+            <Footer/>
             
         </div>
     )

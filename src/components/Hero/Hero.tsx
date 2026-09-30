@@ -69,7 +69,7 @@ const Hero = () => {
                         </button> : null
                     }
 
-                    <button className="w-full rounded-full bg-[#337DDC] px-7 py-3.5 text-sm font-medium text-white transition hover:bg-[#286bc2] sm:w-auto">
+                    <button  className="w-full rounded-full bg-[#337DDC] px-7 py-3.5 text-sm font-medium text-white transition hover:bg-[#286bc2] sm:w-auto">
                         {pathName === "/" ? "View Our Work →" : "Explore Portfolio"}
                     </button>
                 </div>
