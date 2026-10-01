@@ -11,6 +11,7 @@
 //     UserRound,
 // } from "lucide-react";
 
+import Link from "next/link";
 import {
     FaReact,
     FaSearch,
@@ -173,28 +174,31 @@ const Services = () => {
                         const Icon = service.icon;
 
                         return (
-                            <div
-                                key={service.number}
-                                className="group relative min-h-[190px] rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#337DDC]/40 hover:shadow-lg hover:shadow-gray-200/50"
-                            >
-                                <div className="mb-8 flex items-start justify-between">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#337DDC]/10 text-[#337DDC] transition-colors duration-300 group-hover:bg-[#337DDC] group-hover:text-white">
-                                        <Icon className="h-5 w-5" />
+                            //  + service.title.toLocaleLowerCase().replace(/\s+/g, '-')}
+                            <Link key={service.number} href={'/services/' + service.title.toLocaleLowerCase().replace(/\s+/g, '-')}>
+                                <div
+                                    
+                                    className="group relative min-h-[190px] rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#337DDC]/40 hover:shadow-lg hover:shadow-gray-200/50"
+                                >
+                                    <div className="mb-8 flex items-start justify-between">
+                                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#337DDC]/10 text-[#337DDC] transition-colors duration-300 group-hover:bg-[#337DDC] group-hover:text-white">
+                                            <Icon className="h-5 w-5" />
+                                        </div>
+
+                                        <span className="text-xs font-medium text-gray-400">
+                                            {service.number}
+                                        </span>
                                     </div>
 
-                                    <span className="text-xs font-medium text-gray-400">
-                                        {service.number}
-                                    </span>
+                                    <h3 className="text-lg font-semibold text-gray-900">
+                                        {service.title}
+                                    </h3>
+
+                                    <p className="mt-2 max-w-[260px] text-sm leading-6 text-gray-500">
+                                        {service.description}
+                                    </p>
                                 </div>
-
-                                <h3 className="text-lg font-semibold text-gray-900">
-                                    {service.title}
-                                </h3>
-
-                                <p className="mt-2 max-w-[260px] text-sm leading-6 text-gray-500">
-                                    {service.description}
-                                </p>
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>

@@ -18,7 +18,7 @@ export default function Home() {
 
 
       <Navbar />
-      <Hero/>
+      <Hero numbering=""/>
       <Services/>
       <HowWeWork/>
       <Pricing/>
