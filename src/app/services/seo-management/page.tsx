@@ -9,15 +9,15 @@ import Programs from "@/components/pagesComponents/programs";
 
 
 
-const websiteDevelopment = () => {
+const seoManagement = () => {
 
 
     return (
         <div>
             <Navbar />
-            <Hero numbering="0" />
-            <PageDefiner numbering="0" />
-            <Programs numbering="0" />
+            <Hero numbering="1" />
+            <PageDefiner numbering="1" />
+            <Programs numbering="1" />
             <Contact/>
             <Footer/>
         </div>
@@ -25,4 +25,4 @@ const websiteDevelopment = () => {
 }
 
 
-export default websiteDevelopment;
+export default seoManagement;
