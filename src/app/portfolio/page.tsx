@@ -17,7 +17,7 @@ const portfolio = () => {
     return (
         <div>
             <Navbar />
-            <Hero/>
+            <Hero numbering=''/>
             <Porfolio />
             <Footer/>
             
