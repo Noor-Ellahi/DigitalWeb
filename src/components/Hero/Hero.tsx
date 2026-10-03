@@ -56,7 +56,7 @@ const Hero = ({ numbering }: serviceHero) => {
             title: "WordPress Development Built Around Your Needs",
             description:
                 "Professional and flexible WordPress websites that are easy to manage, update, customize, and grow as your business needs change over time.",
-            img: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+            img: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=80",
         },
         {
             title: "Website Management That Keeps Your Site Running",

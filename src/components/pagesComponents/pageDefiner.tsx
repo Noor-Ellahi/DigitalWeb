@@ -54,7 +54,7 @@ const PageDefiner = ({numbering, reverse} : serviceSectionType) => {
             title: "WordPress Websites Built for Easy Management",
             description:
                 "WordPress gives businesses the flexibility to build and manage a professional online presence without unnecessary complexity. We create customized WordPress websites with clean layouts, responsive designs, useful functionality, and an easy-to-manage structure. Whether you need a business website, blog, service platform, or another type of website, we build it around your specific requirements.",
-            img: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+            img: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1600&q=80",
         },
         {
             ultimateTitle : " Website Management",

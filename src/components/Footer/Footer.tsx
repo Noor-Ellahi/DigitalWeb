@@ -67,30 +67,30 @@ const Footer = () => {
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/ecommerce-sites"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     Ecommerce
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/wordpress-development"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     WordPress Development
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/website-designing"
                                     className="transition hover:text-[#337DDC]"
                                 >
-                                    Website Management
-                                </a>
+                                    Website designing
+                                </Link>
                             </li>
                         </ul>
                     </div>
