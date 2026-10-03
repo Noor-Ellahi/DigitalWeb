@@ -63,30 +63,30 @@ const services = [
         title: "WordPress Development",
         description: "Flexible WordPress websites that are easy to manage.",
     },
+    // {
+    //     number: "07",
+    //     icon: FaCog,
+    //     title: "Website Management",
+    //     description: "Keep your website updated, secure, and running smoothly.",
+    // },
     {
         number: "07",
-        icon: FaCog,
-        title: "Website Management",
-        description: "Keep your website updated, secure, and running smoothly.",
-    },
-    {
-        number: "08",
         icon: FaShoppingCart,
         title: "Ecommerce Sites",
         description: "Online stores designed to turn visitors into customers.",
     },
     {
-        number: "09",
+        number: "08",
         icon: FaGlobe,
         title: "Website Designing",
         description: "Clean interfaces designed around your users.",
     },
-    {
-        number: "10",
-        icon: FaUser,
-        title: "Portfolio Development",
-        description: "Professional portfolios that showcase your work.",
-    },
+    // {
+    //     number: "10",
+    //     icon: FaUser,
+    //     title: "Portfolio Development",
+    //     description: "Professional portfolios that showcase your work.",
+    // },
 ];
 
 // const services = [

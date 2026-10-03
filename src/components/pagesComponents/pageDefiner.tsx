@@ -6,12 +6,13 @@ import Image from "next/image";
 
 
 type serviceSectionType = {
-    numbering : string
+    numbering : string,
+    reverse? : string
 }
 
 
-const PageDefiner = ({numbering} : serviceSectionType) => {
-
+const PageDefiner = ({numbering, reverse} : serviceSectionType) => {
+    
     const serviceSection = [
         {
             ultimateTitle : " Web-Development",
@@ -92,7 +93,7 @@ const PageDefiner = ({numbering} : serviceSectionType) => {
             <div className="mx-auto w-full grid items-center gap-12 max-md:gap-5 lg:grid-cols-2 lg:gap-20">
 
                 {/* Image */}
-                <div className="relative h-100 max-md:h-[clamp(200px,70vh,60vw)] overflow-hidden ">
+                <div className={`relative ${reverse === "true" ? "order-2" : ''} h-100 max-md:h-[clamp(200px,70vh,60vw)] overflow-hidden `}>
                     <Image
                         src={serviceSection[Number(numbering)]?.img}
                         alt="Our services"

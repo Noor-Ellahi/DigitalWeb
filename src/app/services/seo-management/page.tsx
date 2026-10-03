@@ -18,8 +18,8 @@ const seoManagement = () => {
         <div>
             <Navbar />
             <Hero numbering="1" />
-            <PageDefiner numbering="1" />
-            <Programs numbering="1" />
+            <PageDefiner numbering="1" reverse={"true"} />
+            <Programs numbering="1"  />
             {/* <Contact/> */}
             <NeedHelp/>
             <FAQ type={1}/>

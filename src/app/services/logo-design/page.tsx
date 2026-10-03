@@ -18,7 +18,7 @@ const logoDesign = () => {
         <div>
             <Navbar />
             <Hero numbering="3" />
-            <PageDefiner numbering="3" />
+            <PageDefiner numbering="3" reverse={"true"}/>
             <Programs numbering="3" />
             {/* <Contact/> */}
             <NeedHelp/>
