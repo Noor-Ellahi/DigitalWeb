@@ -272,9 +272,9 @@ const Navbar = () => {
 
                 {/* Desktop Buttons */}
                 <div className="flex gap-2 font-semibold text-sm items-center max-lg:hidden">
-                    <button className="text-[#F8F4F1] px-2 py-2">
+                    {/* <button className="text-[#F8F4F1] px-2 py-2">
                         <RotateText text="Login" />
-                    </button>
+                    </button> */}
 
                     <button className="px-4 py-2 bg-[#337DDC] rounded-[10px] text-[#fff]">
                         <RotateText text="Try it Out" />

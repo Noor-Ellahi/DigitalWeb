@@ -5,34 +5,28 @@ import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import FAQ from "@/components/pagesComponents/FAQs";
-import HowItWorks from "@/components/pagesComponents/HowItWorks";
 import NeedHelp from "@/components/pagesComponents/needHelp";
 import PageDefiner from "@/components/pagesComponents/pageDefiner";
 import Programs from "@/components/pagesComponents/programs";
-import WhyChooseUs from "@/components/pagesComponents/whyUs";
 
 
 
-const websiteDevelopment = () => {
+const logoDesign = () => {
 
 
     return (
         <div>
             <Navbar />
-            <Hero numbering="0" />
-            <PageDefiner numbering="0" />
-            <HowItWorks type={2} />
-
-            <Programs numbering="0" />
-            <NeedHelp/>
-            <FAQ type={2}/>
-
-            {/* <WhyChooseUs/>  */}
+            <Hero numbering="3" />
+            <PageDefiner numbering="3" />
+            <Programs numbering="3" />
             {/* <Contact/> */}
-            <Footer />
+            <NeedHelp/>
+            <FAQ type={3}/>
+            <Footer/>
         </div>
     )
 }
 
 
-export default websiteDevelopment;
+export default logoDesign;

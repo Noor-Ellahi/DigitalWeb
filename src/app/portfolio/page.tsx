@@ -8,9 +8,7 @@ import Footer from "@/components/Footer/Footer"
 
 
 
-// Imgs
-import bg from "../../../public/image/portimg1.jpg"
-import Image from "next/image"
+
 
 const portfolio = () => {
 

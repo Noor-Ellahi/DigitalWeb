@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import {
     FaFacebookF,
     FaLinkedinIn,
@@ -21,21 +22,21 @@ const Footer = () => {
 
                         <ul className="space-y-3 text-sm text-white/50">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
+                                <Link
                                     href="/portfolio"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     Portfolio
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
@@ -57,12 +58,12 @@ const Footer = () => {
 
                         <ul className="space-y-3 text-sm text-white/50">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/web-development"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     Web Development
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
@@ -102,39 +103,39 @@ const Footer = () => {
 
                         <ul className="space-y-3 text-sm text-white/50">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/seo-management"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     SEO Management
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/content-writing"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     Content Writing
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/logo-design"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     Logo Design
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/services/graphic-design"
                                     className="transition hover:text-[#337DDC]"
                                 >
                                     Graphic Design
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
