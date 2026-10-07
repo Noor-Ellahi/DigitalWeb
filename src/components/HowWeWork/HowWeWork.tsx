@@ -46,7 +46,7 @@ const HowWeWork = () => {
                     Everything you need to Know.
                 </h2>
             </div>
-            <div className="flex max-lg:flex-col max-md:px-0  max-lg:h-auto max-lg:px-[clamp(1rem,5vw,3rem)] max-xl:h-100 max-xl:px-10 px-20 my-20 h-120 ">
+            <div className="flex max-lg:flex-col max-md:px-4  max-lg:h-auto max-lg:px-[clamp(1rem,5vw,3rem)] max-xl:h-100 max-xl:px-10 px-20 my-20 h-120 ">
                 {
                     section.map((it, ind) => {
                         return (

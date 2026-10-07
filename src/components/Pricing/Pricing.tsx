@@ -194,7 +194,7 @@ const Pricing = () => {
                 </h2>
             </div>
             
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8 mt-6">
                 <div className="flex justify-center border-b border-gray-100 pb-px overflow-x-auto scrollbar-none max-w-full">
                     <ul className="flex items-center gap-1 sm:gap-2 whitespace-nowrap px-2">
                         {

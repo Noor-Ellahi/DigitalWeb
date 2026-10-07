@@ -155,7 +155,7 @@ const services = [
 const Services = () => {
     return (
         <section className="bg-white px-5 py-24 sm:px-8 lg:px-12 ">
-            <div className="mx-auto max-w-7xl">
+            <div className="mx-auto px-4 sm:px-6 max-xl:px-0! xl:px-8">
 
                 {/* Heading */}
                 <div className="mb-12">
