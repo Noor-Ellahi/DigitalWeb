@@ -9,6 +9,7 @@ import bg from "../../../public/image/portimg1.jpg"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import Footer from "../Footer/Footer"
+import { useRouter } from "next/navigation"
 
 
 
@@ -19,6 +20,7 @@ import Footer from "../Footer/Footer"
 const Porfolio = () => {
 
     const pathName = usePathname()
+    const router = useRouter()
 
     // States
     const [projectImgOpener, setProjectImgOpener] = useState('')
@@ -169,7 +171,7 @@ const Porfolio = () => {
                                     </p>
 
 
-                                    <button className="mt-7 rounded-full bg-white px-7 py-3 text-sm font-medium text-black transition hover:bg-white/90">
+                                    <button onClick={()=>router.push('/portfolio')} className="mt-7 rounded-full bg-white px-7 py-3 text-sm font-medium text-black transition hover:bg-white/90">
                                         View Our Work →
                                     </button>
                                 </div>

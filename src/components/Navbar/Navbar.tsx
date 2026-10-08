@@ -246,28 +246,32 @@ const Navbar = () => {
                     <Link href={'/'}>
                         <RotateText
                             text="Home"
-                            // subItems={["First", "Second"]}
-                            // onHoverStart={() => setActiveTab("Home")}
-                            // onHoverEnd={() => setActiveTab(null)}
+                        // subItems={["First", "Second"]}
+                        // onHoverStart={() => setActiveTab("Home")}
+                        // onHoverEnd={() => setActiveTab(null)}
                         />
                     </Link>
 
-                    <Link href={'/portfolio'}>
-                        <RotateText text="Projects" />
-                    </Link>
-
                     <RotateText
-                        text="Team"
-                        subItems={["First", "Second", "Hasbi rabbi"]}
+
+                        text="Programs"
+                        subItems={["web-development", "wordpress", "web-design", "logo-design"]}
+                        sub2Items={["SEO", "Ecommerce", "Graphic-design", "content-writing"]}
                         onHoverStart={() => setActiveTab("Team")}
                         onHoverEnd={() => setActiveTab(null)}
                     />
+
+                    <Link href={'/portfolio'}>
+                        <RotateText text="Portfolio" />
+                    </Link>
+
+
 
                     <RotateText text="Contact" />
 
                     <RotateText text="Testimony" />
 
-                    <RotateText text="Programs" />
+                    {/* <RotateText text="Programs" /> */}
                 </ul>
 
                 {/* Desktop Buttons */}
@@ -354,9 +358,9 @@ const Navbar = () => {
                                     Testimony
                                 </li>
 
-                                <li className="py-1.5 cursor-pointer flex w-full items-center justify-between">
+                                {/* <li className="py-1.5 cursor-pointer flex w-full items-center justify-between">
                                     Programs
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     ) : null}
