@@ -13,6 +13,25 @@ type RotateTextProps = {
 }
 
 const RotateText = ({ text, subItems = [], sub2Items = [], onHoverEnd, onHoverStart }: RotateTextProps) => {
+
+
+
+    const urlMapping :  { [key: string]: string } = {
+        "wordpress": "wordpress-development",
+        "web-design": "website-designing",
+        "seo": "seo-management",
+        "ecommerce": "ecommerce-sites"
+    };
+
+    // 2. Create a helper function to format the slug safely
+    const getSlug = (item : string) => {
+        const normalizedKey = item.toLowerCase();
+        // Return the mapped custom slug if it exists, otherwise fall back to lowercase
+        return urlMapping[normalizedKey] || normalizedKey;
+    };
+
+
+
     return (
         // The main container is a block layout so the dropdown can sit beneath it
         <li className="group relative list-none"
@@ -63,7 +82,8 @@ const RotateText = ({ text, subItems = [], sub2Items = [], onHoverEnd, onHoverSt
                                pointer-events-none opacity-0 translate-y-2
                                group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0">
                         {subItems.map((item, idx) => (
-                            <Link href={`/services/${item.toLowerCase()}`} key={idx}>
+
+                            <Link href={`/services/${getSlug(item)}  `} key={idx}>
                                 <li
 
                                     className="cursor-pointer text-[14px] font-medium tracking-wide text-zinc-400 hover:text-zinc-100 transition-all duration-300 ease-out transform hover:translate-x-1"
@@ -77,12 +97,13 @@ const RotateText = ({ text, subItems = [], sub2Items = [], onHoverEnd, onHoverSt
                                pointer-events-none opacity-0 translate-y-2
                                group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0">
                         {sub2Items.map((item, idx) => (
-                            <li
-                                key={idx}
-                                className="cursor-pointer text-[14px] font-medium tracking-wide text-zinc-400 hover:text-zinc-100 transition-all duration-300 ease-out transform hover:translate-x-1"
-                            >
-                                {item}
-                            </li>
+                            <Link href={`/services/${getSlug(item)}  `} key={idx}>
+                                <li
+                                    className="cursor-pointer text-[14px] font-medium tracking-wide text-zinc-400 hover:text-zinc-100 transition-all duration-300 ease-out transform hover:translate-x-1"
+                                >
+                                    {item}
+                                </li>
+                            </Link>
                         ))}
                     </ul>
 
